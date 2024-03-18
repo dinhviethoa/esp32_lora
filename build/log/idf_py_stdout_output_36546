@@ -1,0 +1,133 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6984
+load:0x40078000,len:15512
+load:0x40080400,len:3864
+entry 0x40080650
+[0;32mI (27) boot: ESP-IDF v5.0.6 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 10:08:33[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab5ch ( 43868) map[0m
+[0;32mI (115) esp_image: segment 1: paddr=0001ab84 vaddr=3ffb0000 size=02000h (  8192) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=0001cb8c vaddr=40080000 size=0348ch ( 13452) load[0m
+[0;32mI (127) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=19b00h (105216) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=00039b28 vaddr=4008348c size=09e5ch ( 40540) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x40081108[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     main[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Mar 11 2024 10:08:26[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  c1dd1bec3fae8a6a...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.0.6[0m
+[0;32mI (252) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2938 len 0002D6C8 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008D2E8 len 00012D18 (75 KiB): IRAM[0m
+[0;32mI (306) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (327) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (331) app_start: Starting scheduler on CPU1[0m
+I (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (371) main: Frequency is 923.2MHz[0m
+[0;32mI (371) main: coding_rate=1[0m
+[0;32mI (371) main: bandwidth=7[0m
+[0;32mI (371) main: spreading_factor=7[0m
+[0;32mI (371) main_task: Returned from app_main()[0m
+[0;32mI (371) RX: Start[0m
+[0;32mI (629561) RX: 7 byte packet received:[hello 0][0m
+[0;32mI (634591) RX: 7 byte packet received:[hello 1][0m
+[0;32mI (639621) RX: 7 byte packet received:[hello 2][0m
+[0;32mI (644651) RX: 7 byte packet received:[hello 3][0m
+[0;32mI (649691) RX: 7 byte packet received:[hello 4][0m
+[0;32mI (654721) RX: 7 byte packet received:[hello 5][0m
+[0;32mI (659751) RX: 7 byte packet received:[hello 6][0m
+[0;32mI (664781) RX: 7 byte packet received:[hello 7][0m
+[0;32mI (669811) RX: 7 byte packet received:[hello 8][0m
+[0;32mI (674851) RX: 7 byte packet received:[hello 9][0m
+[0;32mI (679881) RX: 8 byte packet received:[hello 10][0m
+[0;32mI (684921) RX: 8 byte packet received:[hello 11][0m
+[0;32mI (689961) RX: 8 byte packet received:[hello 12][0m
+[0;32mI (695001) RX: 8 byte packet received:[hello 13][0m
+[0;32mI (700031) RX: 8 byte packet received:[hello 14][0m
+[0;32mI (705071) RX: 8 byte packet received:[hello 15][0m
+[0;32mI (710111) RX: 8 byte packet received:[hello 16][0m
+[0;32mI (715151) RX: 8 byte packet received:[hello 17][0m
+[0;32mI (720191) RX: 8 byte packet received:[hello 18][0m
+[0;32mI (725221) RX: 8 byte packet received:[hello 19][0m
+[0;32mI (730261) RX: 8 byte packet received:[hello 20][0m
+[0;32mI (735301) RX: 8 byte packet received:[hello 21][0m
+[0;32mI (740341) RX: 8 byte packet received:[hello 22][0m
+[0;32mI (745381) RX: 8 byte packet received:[hello 23][0m
+[0;32mI (750411) RX: 8 byte packet received:[hello 24][0m
+[0;32mI (755451) RX: 8 byte packet received:[hello 25][0m
+[0;32mI (760491) RX: 8 byte packet received:[hello 26][0m
+[0;32mI (765531) RX: 8 byte packet received:[hello 27][0m
+[0;32mI (770561) RX: 8 byte packet received:[hello 28][0m
+[0;32mI (775601) RX: 8 byte packet received:[hello 29][0m
+[0;32mI (780641) RX: 8 byte packet received:[hello 30][0m
+[0;32mI (785681) RX: 8 byte packet received:[hello 31][0m
+[0;32mI (790721) RX: 8 byte packet received:[hello 32][0m
+[0;32mI (795751) RX: 8 byte packet received:[hello 33][0m
+[0;32mI (800791) RX: 8 byte packet received:[hello 34][0m
+[0;32mI (805831) RX: 8 byte packet received:[hello 35][0m
+[0;32mI (810871) RX: 8 byte packet received:[hello 36][0m
+[0;32mI (815911) RX: 8 byte packet received:[hello 37][0m
+[0;32mI (820951) RX: 8 byte packet received:[hello 38][0m
+[0;32mI (825991) RX: 8 byte packet received:[hello 39][0m
+[0;32mI (831021) RX: 8 byte packet received:[hello 40][0m
+[0;32mI (836061) RX: 8 byte packet received:[hello 41][0m
+[0;32mI (841101) RX: 8 byte packet received:[hello 42][0m
+[0;32mI (846141) RX: 8 byte packet received:[hello 43][0m
+[0;32mI (851171) RX: 8 byte packet received:[hello 44][0m
+[0;32mI (856211) RX: 8 byte packet received:[hello 45][0m
+[0;32mI (861251) RX: 8 byte packet received:[hello 46][0m
+[0;32mI (866291) RX: 8 byte packet received:[hello 47][0m
+[0;32mI (871331) RX: 8 byte packet received:[hello 48][0m
+[0;32mI (876361) RX: 8 byte packet received:[hello 49][0m
+[0;32mI (881401) RX: 8 byte packet received:[hello 50][0m
+[0;32mI (886441) RX: 8 byte packet received:[hello 51][0m
+[0;32mI (891481) RX: 8 byte packet received:[hello 52][0m
+[0;32mI (896511) RX: 8 byte packet received:[hello 53][0m
+[0;32mI (901551) RX: 8 byte packet received:[hello 54][0m
+[0;32mI (906591) RX: 8 byte packet received:[hello 55][0m
+[0;32mI (911631) RX: 8 byte packet received:[hello 56][0m
+[0;32mI (916671) RX: 8 byte packet received:[hello 57][0m
+[0;32mI (921701) RX: 8 byte packet received:[hello 58][0m
+[0;32mI (926741) RX: 8 byte packet received:[hello 59][0m
+[0;32mI (931781) RX: 8 byte packet received:[hello 60][0m
+[0;32mI (936821) RX: 8 byte packet received:[hello 61][0m
+[0;32mI (941851) RX: 8 byte packet received:[hello 62][0m
+[0;32mI (946891) RX: 8 byte packet received:[hello 63][0m
+[0;32mI (951931) RX: 8 byte packet received:[hello 64][0m
+[0;32mI (1422281) RX: 164 byte packet received:[��K�Jړ9�����2@�f������u!�m�X��b9��~��Tӥ�ʴ֍�[v�0�t���TX��*N�X1��FX�?L���+q�b<�ט'��a������x�zKTo��(h�4��c�D��][0m
